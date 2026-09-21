@@ -11,4 +11,6 @@ class Client {
         Account *account;
         Client();
         ~Client();
+        void diplayInfoClient();
+        void setClient();
 };
