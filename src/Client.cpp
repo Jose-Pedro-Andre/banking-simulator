@@ -1,4 +1,5 @@
 #include "../header/Client.hpp"
+#include "../header/Account.hpp"
 
 Client::Client(){};
 Client::~Client()

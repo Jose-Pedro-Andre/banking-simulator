@@ -1,8 +1,9 @@
 #pragma once
 #include <iostream>
-#include "InfoClient.hpp"
 
 using namespace std;
+
+class InfoClient;
 
 class Address {
     private:

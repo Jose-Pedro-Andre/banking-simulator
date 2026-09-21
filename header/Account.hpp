@@ -1,10 +1,11 @@
 #pragma once
 
 #include <iostream>
-#include "Client.hpp"
-#include "InfoClient.hpp"
 
 using namespace std;
+
+class Client;
+class InfoClient;
 
 class Account {
     private:
@@ -13,8 +14,8 @@ class Account {
         string credits;
         string debts;
         InfoClient *info_client;
-        Account(){};
-        ~Account() {};
+        Account();
+        ~Account();
         void create_account();
         void display_account_info();
         friend Client;

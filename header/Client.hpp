@@ -1,13 +1,17 @@
 #pragma once
 #include <iostream>
+#include <string>
 
-#include "../header/Account.hpp"
-#include "../header/Bank.hpp"
 #include "../header/utils.hpp"
+
+using namespace std;
+
+class Bank;
+class Account;
 
 class Client {
     private:
-        friend class Bank;
+        friend Bank;
         string clientId;
         Account *account;
         Client();

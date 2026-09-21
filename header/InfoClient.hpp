@@ -1,9 +1,10 @@
 #pragma once
 #include <iostream>
-#include "Address.hpp"
-#include "Account.hpp"
 
 using namespace std;
+
+class Address;
+class Account;
 
 class InfoClient {
     private:

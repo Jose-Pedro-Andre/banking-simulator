@@ -1,4 +1,5 @@
 #include "../header/Account.hpp"
+#include "../header/InfoClient.hpp"
 
 Account::Account() {
     number_account = "";

@@ -1,4 +1,5 @@
 #include "../header/InfoClient.hpp"
+#include "../header/Address.hpp"
 
 InfoClient::InfoClient():
     name(""),
