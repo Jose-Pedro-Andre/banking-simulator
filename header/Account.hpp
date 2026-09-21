@@ -18,5 +18,4 @@ class Account {
         void create_account();
         void display_account_info();
         friend Client;
-
 };
