@@ -1,7 +1,7 @@
 #include "../header/Client.hpp"
 #include "../header/Account.hpp"
 
-Client::Client(){};
+Client::Client(): clientId(""), account(nullptr) {};
 Client::~Client()
 {
     delete account;

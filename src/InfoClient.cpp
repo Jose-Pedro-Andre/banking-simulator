@@ -15,24 +15,21 @@ InfoClient::~InfoClient() {
 
 void InfoClient::set_info_client() {
     cout << "Digite o nome do cliente: ";
-    getline(cin, name, '\n');
-    cin.ignore(); 
+    getline(cin, name);
     cout << "Digite o sobrenome do cliente: ";
-    getline(cin, surname, '\n');
-    cin.ignore();
+    getline(cin, surname);
     cout << "Digite o email do cliente: ";
-    getline(cin, email, '\n');
-    cin.ignore();
+    getline(cin, email);
     cout << "Digite o telefone do cliente: ";
-    getline(cin, phone_number, '\n');
-    cin.ignore(); 
+    getline(cin, phone_number);
     address = new Address();
     address->set_address();
 }
 
 void InfoClient::display_info_client() {
-    cout << "Nome: " << name << endl;
-    cout << "Sobrenome: " << surname << endl;
-    cout << "Email: " << email << endl;
-    cout << "Telefone: " << phone_number << endl;
+    cout << "    Nome: " << name << endl;
+    cout << "    Sobrenome: " << surname << endl;
+    cout << "    Email: " << email << endl;
+    cout << "    Telefone: " << phone_number << endl;
+    address->display_address();
 }

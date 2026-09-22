@@ -10,23 +10,19 @@ Address::Address():
 Address::~Address() {}
 
 void Address::set_address() {
-    cout << "Provícia: ";
-    getline(cin, state, '\n');
-    cin.ignore();
+    cout << "Província: ";
+    getline(cin, state);
     cout << "Cidade: ";
-    getline(cin, city, '\n');
-    cin.ignore();
+    getline(cin, city);
     cout << "Rua: ";
-    getline(cin, street, '\n');
-    cin.ignore();
+    getline(cin, street);
     cout << "País: ";
-    getline(cin, country, '\n');
-    cin.ignore();
+    getline(cin, country);
 }
 
 void Address::display_address() {
-    cout << "Rua: " << street << endl;
-    cout << "Cidade: " << city << endl;
-    cout << "Provícia: " << state << endl;
-    cout << "País: " << country << endl;
+    cout << "      Rua: " << street << endl;
+    cout << "      Cidade: " << city << endl;
+    cout << "      Província: " << state << endl;
+    cout << "      País: " << country << endl;
 }
