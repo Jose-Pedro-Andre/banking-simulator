@@ -11,12 +11,17 @@ Address::~Address() {}
 
 void Address::set_address() {
     cout << "Provícia: ";
-    cin >> state;
+    getline(cin, state, '\n');
+    cin.ignore();
     cout << "Cidade: ";
-    cin >> city;
+    getline(cin, city, '\n');
+    cin.ignore();
     cout << "Rua: ";
-    cin >> street;
-    country = "Angola";
+    getline(cin, street, '\n');
+    cin.ignore();
+    cout << "País: ";
+    getline(cin, country, '\n');
+    cin.ignore();
 }
 
 void Address::display_address() {

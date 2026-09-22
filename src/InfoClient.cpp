@@ -15,13 +15,17 @@ InfoClient::~InfoClient() {
 
 void InfoClient::set_info_client() {
     cout << "Digite o nome do cliente: ";
-    cin >> name;
+    getline(cin, name, '\n');
+    cin.ignore(); 
     cout << "Digite o sobrenome do cliente: ";
-    cin >> surname;
+    getline(cin, surname, '\n');
+    cin.ignore();
     cout << "Digite o email do cliente: ";
-    cin >> email;
+    getline(cin, email, '\n');
+    cin.ignore();
     cout << "Digite o telefone do cliente: ";
-    cin >> phone_number;
+    getline(cin, phone_number, '\n');
+    cin.ignore(); 
     address = new Address();
     address->set_address();
 }
