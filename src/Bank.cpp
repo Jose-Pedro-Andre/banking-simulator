@@ -47,10 +47,10 @@ void Bank::displayClientsInfo() {
     }
 }
 
-int main() {
-    Bank bank;
-    bank.setBank();
-    bank.addClient();
-    bank.displayClientsInfo();
-    return 0;
-}
+// int main() {
+//     Bank bank;
+//     bank.setBank();
+//     bank.addClient();
+//     bank.displayClientsInfo();
+//     return 0;
+// }

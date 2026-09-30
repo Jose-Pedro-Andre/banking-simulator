@@ -3,9 +3,28 @@
 #include <iostream>
 #include <sstream>
 #include <random>
+#include <stdio.h>
+#include <termios.h>
+#include <unistd.h>
 
 using namespace std;
 
+
+static struct termios oldt;
+
+
+void mod_cannon_off(void) {
+    struct termios newt;
+
+    tcgetattr(STDIN_FILENO, &oldt);
+    newt = oldt;
+    newt.c_lflag &= ~(ICANON | ECHO);
+    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+}
+
+void reset_terminal(void) {
+    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+}
 
 string generateIDCliente() {
     random_device rd;
